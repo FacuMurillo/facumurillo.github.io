@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}   
+body{
+    background-color: rgb(245, 198, 127);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: rgb(245, 198, 127);
+    margin: 60px 10px;
+}
+
+header figure{
+    width: 100%;
+}
+header img{
+    width: 100%;
+    filter: invert(1);
+    box-shadow: 0px 0px 100px white;
+}
+aside .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside a{
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+aside a:hover, aside a:focus{
+    background-color: blueviolet;
+}
+aside .formulario{
+    visibility: hidden;
+}
+main{
+   
+}
+main h1{
+    text-align: center;
+    margin:20px 5px;
+}
+main p{
+    padding: 5px;
+}
+main figure{
+    margin: 20px 5px;
+    width: 100%;
+}
+
+main img{
+    width: 100%;
+}
+footer{
+    text-align: center;
+    /* color: #eeeeee; */
+}
+/* Galeria */
+#galeria{
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 198, 127);
+}
+#galeria figure{
+    margin: 10px 4px;
+}
+/* Cancionero */
+#cancionero{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+#cancionero section{
+    margin: 25px 0;
+}
+#cancionero h2{
+    margin: 10px 0;
+    font-weight: bold;
+}
+/* Clip */
+#clip{
+    margin: 50px 0;
+}
+#clip video{
+    width: 100%;
+}
+#clip iframe{
+    width: 100%;
+}
+/* PC */
+
+@media screen and (min-width:1024px){
+    header figure{
+        margin: 0 auto;
+        width: 20%;
+    }
+    #contenedor-principal{
+        display: flex;
+    }
+    aside a{
+        margin: 10px 10px;
+    }
+    aside a:hover{
+        background-color: blue;
+    }
+    aside a:focus{
+        background-color: blue;
+    }
+    aside .nav{
+        flex-direction: row;
+        justify-content: center;
+        min-width: 30%;
+    }
+    aside .formulario{
+        visibility: visible;
+        color: black;
+        margin: 100px 20px;
+    }
+    aside fieldset{
+        padding: 40px 50px;
+        border: black 1px solid;
+        text-align: center;
+    }
+    aside .form{
+        display: flex;
+        justify-content: end;
+    }
+    aside label{
+        text-align: start;
+    }
+    aside select{
+        width: 50%;
+        margin: 5px 10px;
+    }
+    aside input{
+        margin: 5px 10px;
+        width: 50%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 50px;
+    }
+    main h1{
+        font-weight: bold;
+        font-size: 3em;
+    }
+    main p{
+        font-size: 1.2em;
+    }
+    main figure{
+        width: 40%;
+    }
+
+    /* Galeria */
+
+    #galeria{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 60px 10px;
+       background-color: rgb(245, 198, 127);
+    }
+
+    #galeria figure{
+        width: 35%;
+    }
+    #galeria img{
+        border-radius: 2%;
+        box-shadow: 8px 8px 15px black;
+    }
+    #galeria h1{
+        display: none;
+    }
+
+    /* cancionero */
+
+    #cancionero{
+       align-items: start;
+    }
+    /* Clip */
+    #clip{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+    #clip video{
+        padding: 50px 10px;
+        width: 60%;
+    }
+    
+    #clip iframe {
+        width: 60%;
+        height: 300px;
+    }
+
+}

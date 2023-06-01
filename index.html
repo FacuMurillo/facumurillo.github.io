@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <title>Tan Bionica</title>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="./img/TanBionicaLOGO.png" alt="Logo de Tan bionica">
+        </figure>
+    </header>
+    <section id="contenedor-principal">
+        <aside>
+            <nav class="nav">
+                <a href="#">Inicio</a>
+                <a href="html/galeria.html">Galeria</a>
+                <a href="html/canciones.html">Canciones</a>
+                <a href="html/clip.html">Video Clip</a>
+            </nav>
+            <section class="formulario">
+                <form action="php/formulario.php" method="post">
+                    <fieldset>
+                        <legend>Modifica la fuente</legend>
+                        <section class="form">
+                            <label for="fuente">Fuentes:</label>
+                            <select name="fuentes" id="fuente">
+                            <option value="monoscape" id="monoscape">Monoscape</option>
+                            <option value="arial" id="arial">Arial 14</option>
+                            <option value="sansSerif">Sans-Serif</option>
+                        </select>
+                        </section>
+                        <section class="form">
+                            <label for="tamaño">Tamaño:</label>
+                            <input type="range" name="tama" id="tamaño" step="0.5" min="1" max="4">
+                        </section>
+                        <section class="form">
+                            <label for="color">Color:</label>
+                            <input type="color" name="color" id="color">
+                        </section>
+                        <section class="form">
+                            <label for="fondo">Color Fondo:</label>
+                            <input type="color" name="colorFondo" id="fondo">
+                        </section>
+                    </fieldset>
+                </form>
+            </section>
+        </aside>
+        <main>
+            <h1>Tan Bionica</h1>
+            <p id="miParrafo">Tan Biónica es un grupo musical argentino surgido en Buenos Aires en el año 2002 (empezando a gestarse a finales de los años noventa) formado por Chano (voz y frontman), Seby (guitarra), Bambi (bajo) y Diega (batería). Desde 2016 el grupo estuvo en un impasse hasta el 17 de marzo de 2023, cuando Chano se presentó en el Festival Lollapalooza y anunció oficialmente el regreso de la banda.</p>
+            <figure>
+                <img src="./img/chano.avif" alt="Chano en el Lolla">
+            </figure>
+        </main>
+    </section>
+    <footer>
+        <P>Tan Bionica 2023</P>
+    </footer>
+
+<script src="javascript/function.js"></script>
+</body>
+</html>
